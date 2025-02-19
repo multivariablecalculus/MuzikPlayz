@@ -137,10 +137,7 @@ LOGIN_URL = '/login/'
 LOGIN_REDIRECT_URL = '/'
 
 CSRF_TRUSTED_ORIGINS = [
-    'http://5d22-2409-40e0-11bd-2bc4-84bf-5b19-a2cd-d0f4.ngrok-free.app',
-    'https://5d22-2409-40e0-11bd-2bc4-84bf-5b19-a2cd-d0f4.ngrok-free.app',
-    'https://4356-152-58-180-238.ngrok-free.app/',
-    'https://4356-152-58-180-238.ngrok-free.app',
+    'https://www.muzikplayz.onrender.com',
 ]
 
 CORS_ALLOWED_ORIGINS = [
