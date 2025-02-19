@@ -1,10 +1,10 @@
 services:
   - type: web
-    name: muzikplayz
+    name: MuzikPlayz
     env: python
-    plan: free
-    buildCommand: ""
-    startCommand: python app.py
-    envVars:
-      - key: ENVIRONMENT
-        value: production
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn MuzikPlayz.wsgi:application --bind 0.0.0.0:$PORT"
+    disk:
+      name: db-storage
+      mountPath: /var/lib/sqlite
+      sizeGB: 1
