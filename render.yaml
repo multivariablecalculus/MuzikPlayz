@@ -1,10 +1,10 @@
 services:
   - type: web
     name: muzikplayz
-    env: node
+    env: python
     plan: free
-    buildCommand: npm install
-    startCommand: npm start
+    buildCommand: ""
+    startCommand: python app.py
     envVars:
-      - key: NODE_ENV
+      - key: ENVIRONMENT
         value: production
